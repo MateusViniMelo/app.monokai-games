@@ -148,7 +148,7 @@ export default {
       async buscarDados(link){
         if(link.url != null){
           this.$nuxt.$loading.start()
-          const dadosPaginados = await this.$axios.$post(link.url)
+          const dadosPaginados = await this.$axios.$post(link.url.replace("http","https"))
           
           this.$nuxt.$loading.finish()
           this.dados = dadosPaginados
