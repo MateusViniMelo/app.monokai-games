@@ -46,6 +46,11 @@ export default {
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
+  publicRuntimeConfig: {
+    axios: {
+      baseURL: process.env.API_GAMES
+    }
+  },
   privateRuntimeConfig: {
     axios: {
       baseURL: process.env.API_GAMES

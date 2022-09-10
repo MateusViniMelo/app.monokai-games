@@ -144,14 +144,14 @@ export default {
       },
       async pesquisarJogo(){
         const dadosFiltrados = await this.$axios.$post("/game-filtro",this.formPesquisa)
-        console.log(dadosFiltrados)
+        
         this.dados = dadosFiltrados
       },
       async buscarDados(link){
         if(link.url != null){
           this.$nuxt.$loading.start()
           const dadosPaginados = await this.$axios.$post(link.url)
-          console.log(dadosPaginados)
+          
           this.$nuxt.$loading.finish()
           this.dados = dadosPaginados
         }
