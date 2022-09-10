@@ -53,9 +53,7 @@
             <div class="col-6 col-xl-4">
               <button type="submit" class="btn btn-purple mt-3 mb-5 ">Pesquisar</button>
             </div>
-            <div class="col-12 text-white">
-              {{formPesquisa}}
-            </div>
+            
           </div>
         </form>
       </div>
